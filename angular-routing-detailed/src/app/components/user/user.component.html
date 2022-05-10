@@ -1,0 +1,16 @@
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td><a [routerLink]="['/user',user.id]">{{user.id}}</a></td>
+        <td>{{user.name}}</td>
+        <td>{{user.dep}}</td>
+    </tr>
+</table>
+
+
+
+<a [routerLink]="['/adduser']"> <button class="btn btn-info"> Add User </button></a>
